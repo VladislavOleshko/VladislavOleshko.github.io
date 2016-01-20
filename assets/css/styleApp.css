@@ -1,0 +1,73 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background: url("../img/bluesky.jpg") center no-repeat;
+    background-size: cover;
+}
+.text-center {
+    font-size: 58px;
+    font-family: "Trebuchet MS";
+    color: greenyellow;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+}
+.btn-size {
+    width: 200px;
+    font-size: 30px;
+    margin-top: 12%;
+    margin-left: 9%;
+}
+#store-text {
+    float: left;
+    margin-top: 5%;
+    margin-left: 9%;
+    font-size: 30px;
+}
+#link-color {
+    text-shadow: -1px -1px #FFF,
+    -2px -2px #FFF,
+    -1px 1px #FFF,
+    -2px 2px #FFF,
+    1px 1px #FFF,
+    2px 2px #FFF,
+    1px -1px #FFF,
+    2px -2px #FFF,
+    -3px -3px 2px #BBB,
+    -3px 3px 2px #BBB,
+    3px 3px 2px #BBB,
+    3px -3px 2px #BBB;
+    color: steelblue;
+    transition: all 1s;
+}
+#link-color:hover {
+    color: yellowgreen;
+}
+
+.btn-favourite {
+    background-color: transparent;
+    border: none;
+}
+.btn-primary {
+    font-size: 24px;
+    text-align: center;
+}
+.form-pos {
+    position: absolute;
+    top:21%;
+    left:35%;
+}
+.btn-edit {
+    background-color: transparent;
+    border: transparent;
+}
+.btn-delete {
+    background-color: transparent;
+    border:none;
+}
+#mobilePhone{
+    color: black;
+}
+.glyphicon-trash, .glyphicon-star-empty {
+    color: black;
+}

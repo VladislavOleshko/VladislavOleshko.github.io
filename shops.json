@@ -1,0 +1,17 @@
+{"results" : [
+  {"name": "Rozetka", "id": 1, "href": "http://rozetka.com.ua/", "category": "department", "phone":"(0-800) 503-808", "showSaveIcon": true},
+  {"name": "Allo", "id": 2, "href": "http://allo.ua/", "category": "department", "phone":"(0-800) 300 100", "showSaveIcon": true},
+  {"name": "Mobilluck", "id": 3, "href": "http://www.mobilluck.com.ua/", "category": "department", "phone":"+38 (067) 626-23-99", "showSaveIcon": true},
+  {"name": "Foxtrot", "id": 4, "href": "http://www.foxtrot.com.ua/", "category": "department", "phone":"+38 (050) 385-05-85", "showSaveIcon": true},
+  {"name": "Fotomag", "id": 5, "href": "http://fotomag.com.ua/", "category": "department", "phone":"(0-800)-300-222", "showSaveIcon": true},
+  {"name": "Rost", "id": 6, "href": "http://rost.kh.ua/", "category": "grocery", "phone":"+38 (050) 203-30-40", "showSaveIcon": true},
+  {"name": "Ambar", "id": 7, "href": "http://www.ambar.ua/", "category": "grocery", "phone":"+38 (099) 016-23-29", "showSaveIcon": true},
+  {"name": "Kopeyka", "id": 8, "href": "http://kopeyka.od.ua/", "category": "grocery", "phone":"+38 (050) 492-19-24", "showSaveIcon": true},
+  {"name": "Tavriya", "id": 9, "href": "http://www.tavriav.ua/", "category": "grocery", "phone":"+38 (050) 415-87-35", "showSaveIcon": true},
+  {"name": "Objora", "id": 10, "href": "http://produkty24.com.ua/", "category": "grocery", "phone":"(048) 777-2-111", "showSaveIcon": true},
+  {"name": "Divani", "id": 11, "href": "http://www.divani.ua/", "category": "furniture", "phone":"+38 (050) 251-50-85", "showSaveIcon": true},
+  {"name": "Mebtorg", "id": 12, "href": "http://mebtorg.com/", "category": "furniture", "phone":"+38 (066) 946-37-75", "showSaveIcon": true},
+  {"name": "Taburetka", "id": 13, "href": "http://www.taburetka.ua/", "category": "furniture", "phone":"+38 050 805-77-85", "showSaveIcon": true},
+  {"name": "Sofino", "id": 14, "href": "http://sofino.ua/", "category": "furniture", "phone":"(0-800) 303-300", "showSaveIcon": true},
+  {"name": "Dybok", "id": 15, "href": "http://www.dybok.com.ua/", "category": "furniture", "phone":"+38 (050) 853-9-222", "showSaveIcon": true}
+]}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html data-ng-app="SPA">
+<head>
+    <meta charset="UTF-8">
+    <title>Ukrainian online stores</title>
+</head>
+<body data-ng-controller="appController">
+    <h1 class="text-center">Ukrainian online stores</h1>
+    <button type="button" class="btn btn-success btn-lg btn-size" data-ng-click="setCurrentCategory('department')">Universal
+        <i class="glyphicon glyphicon-qrcode"></i></button>
+    <button type="button" class="btn btn-success btn-lg btn-size" data-ng-click="setCurrentCategory('grocery')">Grocery
+        <i class="glyphicon glyphicon-apple"></i></button>
+    <button type="button" class="btn btn-success btn-lg btn-size" data-ng-click="setCurrentCategory('furniture')">Furniture
+        <i class="glyphicon glyphicon-home"></i></button>
+    <button type="button" class="btn btn-success btn-lg btn-size" data-ng-click="setCurrentCategory('favourite')">Favourite
+        <i class="glyphicon glyphicon-heart"></i></button>
+    <p id="store-text" data-ng-repeat="shop in shops | filter:{category:currentCategory}">
+        <a id="link-color" href="{{shop.href}}" target="_blank">{{shop.name}}</a>
+        <span id="mobilePhone" data-ng-show="showPhone">{{shop.phone}}</span>
+        <button class="btn-favourite" data-ng-click="getChosenMagazine(shop)" data-ng-show="shop.showSaveIcon">
+            <i class="glyphicon glyphicon-star-empty"></i></button>
+        <button class="btn-delete" data-ng-click="removeChosenShop(shop)" data-ng-show="showRemoveButton">
+            <i class="glyphicon glyphicon-trash"></i></button>
+    </p>
+    <!-- CREATING -->
+    <form role="form" name="myForm" class="form-inline form-pos" data-ng-submit="createShop(shop)" data-ng-show="showAddForm">
+        <div class="form-group">
+            <label>Store</label>
+                <input class="form-control" name="StoreName" data-ng-model="shop.name" placeholder="Rozetka"
+                   pattern="[a-zA-Z0-9]{3,12}" required>
+        </div>
+        <div class="form-group">
+            <label>Link</label>
+                <input class="form-control" name="StoreName" data-ng-model="shop.href" placeholder="rozetka.com.ua"
+                   pattern="[a-z0-9]{0,}\.{1}[a-z]{2,4}\.{0,1}[a-z]{0,2}" required>
+        </div>
+        <button type="submit" class="btn btn-success" data-ng-disabled="myForm.StoreName.$dirty && myForm.StoreName.$invalid">Add
+            <i class="glyphicon glyphicon-plus"></i></button>
+    </form>
+</body>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/styleApp.css"/>
+<script src="assets/libs/angular.min.js"></script>
+<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="app/appController.js"></script>
+</html>
